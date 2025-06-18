@@ -1,0 +1,135 @@
+body {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    font: 1em sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+    font-family: 'centurygothic_bold';
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+@font-face {
+    font-family: 'roboto-c';
+    src: url('../../media/fonts/roboto-c.ttf');
+}
+
+@font-face {
+    font-family: 'KatahdinRound';
+    src: url('../../media/fonts/KatahdinRound.otf');
+}
+
+@font-face {
+    font-family: 'centurygothic_bold';
+    src: url('../../media/fonts/centurygothic_bold.ttf');
+}
+
+canvas {
+    margin: auto;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+@media screen and (orientation: portrait) {
+    canvas {
+        aspect-ratio: 9 / 16;
+        height: auto;
+        width: 100vw;
+    }
+
+    body {
+        width: auto;
+        height: 50%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    canvas {
+        height: 100vh;
+        width: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    body {
+        width: auto;
+        height: 50%;
+    }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+
+    /*ipad*/
+    canvas {
+        height: auto;
+        width: 100vw;
+    }
+}
+
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+
+    /*ipad-mini portrait*/
+    canvas {
+        height: 100vh;
+        width: auto;
+    }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+
+    /*ipad-mini landscape*/
+    canvas {
+        height: auto;
+        width: 100vw;
+    }
+}
+
+/**-----**/
+
+
+
+@media all and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
+
+    /*ipad-air portrait*/
+    canvas {
+        height: 100vh;
+        width: auto;
+    }
+}
+
+@media all and (device-width: 1180px) and (device-height: 820px) and (orientation: landscape) {
+
+    /*ipad-air landscape*/
+    canvas {
+        height: auto;
+        width: 100vw;
+    }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    /*ipad-pro portrait*/
+    canvas {
+        height: 100vh;
+        width: auto;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    /*ipad-pro landscape*/
+    canvas {
+        height: auto;
+        width: 100vw;
+    }
+
+}

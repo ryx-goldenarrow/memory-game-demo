@@ -1,0 +1,84 @@
+{"frames": [
+
+{
+	"filename": "ball.png",
+	"frame": {"x":1743,"y":740,"w":82,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":82},
+	"sourceSize": {"w":82,"h":82},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "board_play.png",
+	"frame": {"x":1195,"y":676,"w":358,"h":138},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":358,"h":138},
+	"sourceSize": {"w":358,"h":138},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "btn_play.png",
+	"frame": {"x":1559,"y":676,"w":322,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":322,"h":58},
+	"sourceSize": {"w":322,"h":58},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "character_1.png",
+	"frame": {"x":5,"y":5,"w":596,"h":1087},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":596,"h":1087},
+	"sourceSize": {"w":612,"h":1087},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "character_2.png",
+	"frame": {"x":607,"y":5,"w":582,"h":1050},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":37,"w":582,"h":1050},
+	"sourceSize": {"w":612,"h":1087},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "desktop_bg.png",
+	"frame": {"x":5,"y":1098,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "field_play.png",
+	"frame": {"x":1559,"y":740,"w":178,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":178,"h":58},
+	"sourceSize": {"w":178,"h":58},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "mobile_bg.png",
+	"frame": {"x":1195,"y":5,"w":375,"h":665},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":375,"h":665},
+	"sourceSize": {"w":375,"h":665},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "theme-7.png",
+	"format": "RGBA8888",
+	"size": {"w":1930,"h":2183},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:53d48e5a5fb7f9701b0e7db7cfdc9c61:ee389296bfb59f2ca8b5185d313809b0:ac8dc9c6438adc5dc9efc8432603ce19$"
+}
+}

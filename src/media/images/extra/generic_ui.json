@@ -1,0 +1,139 @@
+﻿{"frames": {
+
+"ais_coin0000":
+{
+	"frame": {"x":2,"y":2,"w":99,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":98},
+	"sourceSize": {"w":99,"h":98}
+},
+"btn_10000":
+{
+	"frame": {"x":103,"y":2,"w":472,"h":108},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":472,"h":108},
+	"sourceSize": {"w":472,"h":108}
+},
+"btn_20000":
+{
+	"frame": {"x":577,"y":2,"w":315,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":315,"h":109},
+	"sourceSize": {"w":315,"h":109}
+},
+"btn_30000":
+{
+	"frame": {"x":2,"y":113,"w":180,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":109},
+	"sourceSize": {"w":180,"h":109}
+},
+"btn_40000":
+{
+	"frame": {"x":184,"y":113,"w":221,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":110},
+	"sourceSize": {"w":221,"h":110}
+},
+"btn_circle0000":
+{
+	"frame": {"x":407,"y":113,"w":206,"h":206},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":206,"h":206},
+	"sourceSize": {"w":206,"h":206}
+},
+"btn_gold0000":
+{
+	"frame": {"x":615,"y":113,"w":326,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":326,"h":122},
+	"sourceSize": {"w":326,"h":122}
+},
+"btn_gold_box0000":
+{
+	"frame": {"x":2,"y":321,"w":221,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":110},
+	"sourceSize": {"w":221,"h":110}
+},
+"btn_gold_circle0000":
+{
+	"frame": {"x":225,"y":321,"w":211,"h":209},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":211,"h":209},
+	"sourceSize": {"w":211,"h":209}
+},
+"circle_icon0000":
+{
+	"frame": {"x":438,"y":321,"w":133,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":133,"h":131},
+	"sourceSize": {"w":133,"h":131}
+},
+"icon_convert0000":
+{
+	"frame": {"x":573,"y":321,"w":81,"h":80},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":81,"h":80},
+	"sourceSize": {"w":81,"h":80}
+},
+"icon_game0000":
+{
+	"frame": {"x":656,"y":321,"w":100,"h":99},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":99},
+	"sourceSize": {"w":100,"h":99}
+},
+"icon_gift0000":
+{
+	"frame": {"x":758,"y":321,"w":178,"h":178},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":178,"h":178},
+	"sourceSize": {"w":178,"h":178}
+},
+"icon_user0000":
+{
+	"frame": {"x":2,"y":532,"w":100,"h":98},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":98},
+	"sourceSize": {"w":100,"h":98}
+},
+"icon_x0000":
+{
+	"frame": {"x":104,"y":532,"w":145,"h":144},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":145,"h":144},
+	"sourceSize": {"w":145,"h":144}
+},
+"spin_icon0000":
+{
+	"frame": {"x":251,"y":532,"w":206,"h":206},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":206,"h":206},
+	"sourceSize": {"w":206,"h":206}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "22.0.3.179",
+	"image": "generic_ui.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}
