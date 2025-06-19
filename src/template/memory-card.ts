@@ -6,4 +6,8 @@ export default class MemoryCard extends SpriteV2 {
         super(txtr);
 
     }
+
+    animateReveal() {
+
+    }
 }

@@ -1,0 +1,83 @@
+﻿{"frames": {
+
+"mascot10000":
+{
+	"frame": {"x":0,"y":1002,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot20000":
+{
+	"frame": {"x":1500,"y":501,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot30000":
+{
+	"frame": {"x":1000,"y":501,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot40000":
+{
+	"frame": {"x":500,"y":501,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot50000":
+{
+	"frame": {"x":0,"y":501,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot60000":
+{
+	"frame": {"x":1500,"y":0,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot70000":
+{
+	"frame": {"x":1000,"y":0,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot80000":
+{
+	"frame": {"x":500,"y":0,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+},
+"mascot90000":
+{
+	"frame": {"x":0,"y":0,"w":500,"h":501},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":500,"h":501},
+	"sourceSize": {"w":500,"h":501}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "22.0.3.179",
+	"image": "cards.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1"
+}
+}

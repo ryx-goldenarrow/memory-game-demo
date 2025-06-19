@@ -44,36 +44,12 @@ export default class GameHud extends SpriteV2 {
         );
         this.labels[0].position.set(-150, 7);*/
 
-
-
         //----------------
 
         //bg
         this.box[1] = this.bottomContainer.addChild(new Graphics());
         this.box[1].roundRect(-320, -30, 640, 100, 50);
         this.box[1].fill(COLORS.BLACK, 0.5);
-
-
-        //token
-        /*this.betlabels[1] = this.bottomContainer.addChild(
-            new TextboxIcon(
-                "token",
-                '' + 0,
-                165,
-                55,
-                COLORS.WHITE,
-                19,
-                Assets.get('token')
-            )
-        );*/
-
-
-
-
-
-
-        //----------------------
-
 
 
 

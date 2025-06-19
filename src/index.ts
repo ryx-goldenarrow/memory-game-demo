@@ -3,8 +3,9 @@ import SpriteV2 from './template/components/sprite-v2';
 import { COLORS } from './enums';
 import { GAMESETTINGS } from './game-settings';
 import { Log } from './utils/Utils';
-import Preloader from './preloader';
+import Preloader from './view/preloader';
 import MainGame from './view/main-game';
+import MainControl from './view/main-control';
 const cssstyle1 = require('../src/template/css/game.css');
 
 
@@ -32,9 +33,6 @@ const cssstyle1 = require('../src/template/css/game.css');
     await preloader.initPreloader();
 
     preloader.loadGameComplete = () => {
-
-        console.log("load game @@@")
-
         // Create and add main container to the stage------
         const mainContainer: SpriteV2 = app.stage.addChild(new SpriteV2());
         mainContainer.scale.set(0.5);
@@ -43,6 +41,9 @@ const cssstyle1 = require('../src/template/css/game.css');
 
         const mainGame: MainGame = new MainGame(app);
         mainContainer.addChild(mainGame);
+
+
+        const mainControl: MainControl = new MainControl(mainGame, app);
 
     }
 

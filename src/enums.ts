@@ -29,8 +29,12 @@ export enum COLORS {
 }
 
 
-export enum Event {
-    PRELOADER_COMPLETE = "preloaderComplete",
-    ORIENTATION_CHANGE = "orientationChange",
+
+export enum GameEvents {
+    updateText = 'updateText',
+    PRELOADER_COMPLETE = 'preloadComplete',
+    ORIENTATION_CHANGE = 'orientationchange',
+    ON_PORTRAIT = 'onPortait',
+    ON_LANDSCAPE = 'onLandscape',
     ON_RESIZE = "onResize"
 }
