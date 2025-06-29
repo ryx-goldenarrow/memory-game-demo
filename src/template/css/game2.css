@@ -1,0 +1,78 @@
+body {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    font: 1em sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'roboto-condensed';
+    src: url('../../media/fonts/roboto-c.ttf');
+}
+
+@font-face {
+    font-family: 'centurygothic-bold';
+    src: url('../../media/fonts/centurygothic_bold.ttf');
+}
+
+@font-face {
+    font-family: 'bungee-regular';
+    src: url('../../media/fonts/bungee-regular.ttf');
+}
+
+canvas {
+    margin: auto;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    font-family: 'centurygothic-bold', 'bungee-regular', 'roboto-condensed',
+        'katahdin-round',  sans-serif;
+}
+
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+}
+
+#game-canvas {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*default orientation ------------*/
+
+@media screen and (orientation: landscape) {
+    canvas {
+        height: 100%;
+        width: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    canvas {
+        height: 100%;
+        width: auto;
+        aspect-ratio: 9 / 16;
+        display: block;
+    }
+
+}
+

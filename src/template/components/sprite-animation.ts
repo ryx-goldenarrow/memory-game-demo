@@ -2,8 +2,8 @@ import { Assets, Texture } from 'pixi.js';
 import SpriteV2 from './sprite-v2';
 
 import gsap from 'gsap';
-import { NumberZero } from './Utils';
-import { TexturePacker } from './PixiUtils';
+import { NumberZero } from '../../utils/Utils';
+import { TexturePacker } from '../../utils/PixiUtils';
 
 export default class SpriteAnimation extends SpriteV2 {
     constructor(txtr?: Texture) {

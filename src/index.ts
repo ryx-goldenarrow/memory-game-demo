@@ -6,8 +6,8 @@ import { Log } from './utils/Utils';
 import Preloader from './view/preloader';
 import MainGame from './view/main-game';
 import MainControl from './view/main-control';
-const cssstyle1 = require('../src/template/css/game.css');
-
+import Resize from './view/resize';
+const cssstyle1 = require('../src/template/css/game2.css');
 
 
 (async () => {
@@ -18,15 +18,22 @@ const cssstyle1 = require('../src/template/css/game.css');
 
 
 
+
     await app.init({
-        background: COLORS.WHITE,
         resolution: 2,
         antialias: false,
+        backgroundAlpha: 0,
     });
+    app.canvas.style.position = "relative";
+    let gamecanvas = document.getElementById("game-canvas");
+    gamecanvas?.appendChild(app.canvas);
 
-    //add to canvas
-    document.getElementById('game-canvas')?.appendChild(app.canvas);
-    app.canvas.style.position = 'relative';
+    const mainContainer: SpriteV2 = app.stage.addChild(new SpriteV2());
+    mainContainer.scale.set(0.5);
+
+
+    const resize: Resize = new Resize({ app: app, mainContainer: mainContainer }, 1.1, 1.1);
+
 
 
     const preloader: Preloader = new Preloader();
@@ -34,14 +41,12 @@ const cssstyle1 = require('../src/template/css/game.css');
 
     preloader.loadGameComplete = () => {
         // Create and add main container to the stage------
-        const mainContainer: SpriteV2 = app.stage.addChild(new SpriteV2());
-        mainContainer.scale.set(0.5);
-        mainContainer.position.set(app.screen.width * 0.5, app.screen.height * 0.5)
 
-
-        const mainGame: MainGame = new MainGame(app);
+        const mainGame: MainGame = new MainGame(app, resize);
         mainContainer.addChild(mainGame);
+        resize.resize(mainGame)
 
+        console.log("added game")
 
         const mainControl: MainControl = new MainControl(mainGame, app);
 

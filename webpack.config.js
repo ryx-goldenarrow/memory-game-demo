@@ -59,8 +59,8 @@ module.exports = {
             patterns: [
                 { from: 'src/media/', to: 'media/' },
                 {
-                    from: 'src/fav-bpi.webp',
-                    to: path.resolve(__dirname, 'public/fav-bpi.webp'),
+                    from: 'src/fav-logo.webp',
+                    to: path.resolve(__dirname, 'public/fav-logo.webp'),
                 },
             ],
         }),

@@ -30,8 +30,10 @@ export default class Preloader extends SpriteV2 {
 
             Assets.addBundle("images", {
                 //load spritesheet
+                bg: "/media/images/game/bg.png", // prettier-ignore
                 card1: "/media/images/game/sample_card.png", // prettier-ignore
                 cards: "/media/images/game/cards.json", // prettier-ignore
+                card_back: "/media/images/game/card-back.png", // prettier-ignore
 
                 //btn: "/game/media/images/color-game/btn.json", // prettier-ignore
                 //animation
@@ -41,14 +43,13 @@ export default class Preloader extends SpriteV2 {
 
 
             await Assets.loadBundle('images', (e) => {
-                console.log("complete 123", e)
+                // console.log("complete 123", e)
 
             }).then(() => {
-                console.log("loading")
+                console.log("#Loading complete")
                 this.loadGameComplete();
             })
 
-            console.log("fff")
         })();
     }
 

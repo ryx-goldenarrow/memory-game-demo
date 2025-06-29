@@ -1,7 +1,7 @@
 import { Graphics } from 'pixi.js';
 
-import TextV2 from './text-v2';
-import SpriteV2 from './sprite-v2';
+import TextV2 from '../template/components/text-v2';
+import SpriteV2 from '../template/components/sprite-v2';
 import { COLORS } from '../enums';
 import { GAMESETTINGS, GameSettings } from '../game-settings';
 import { DimColor, GradientColor } from './Utils';

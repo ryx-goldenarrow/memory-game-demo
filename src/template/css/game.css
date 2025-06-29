@@ -6,130 +6,336 @@ body {
     margin: auto;
     padding: 0px;
     overflow: hidden;
-    font-family: 'centurygothic_bold';
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
-
-
 @font-face {
-    font-family: 'roboto-c';
+    font-family: 'roboto-condensed';
     src: url('../../media/fonts/roboto-c.ttf');
 }
 
 @font-face {
-    font-family: 'KatahdinRound';
-    src: url('../../media/fonts/KatahdinRound.otf');
+    font-family: 'centurygothic-bold';
+    src: url('../../media/fonts/centurygothic_bold.ttf');
 }
 
 @font-face {
-    font-family: 'centurygothic_bold';
-    src: url('../../media/fonts/centurygothic_bold.ttf');
+    font-family: 'bungee-regular';
+    src: url('../../media/fonts/bungee-regular.ttf');
 }
 
 canvas {
     margin: auto;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
     position: relative;
     text-align: center;
+    font-family: 'centurygothic-bold', 'bungee-regular', 'roboto-condensed',
+        'katahdin-round',  sans-serif;
+}
+
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+
+#game-canvas {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/*default orientation ------------*/
+
+@media screen and (orientation: landscape) {
+    canvas {
+        height: 100%;
+        width: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+    }
 }
 
 @media screen and (orientation: portrait) {
     canvas {
+        height: 100%;
+        width: auto;
         aspect-ratio: 9 / 16;
-        height: auto;
-        width: 100vw;
+        display: block;
     }
 
-    body {
-        width: auto;
-        height: 50%;
-    }
 }
 
-@media screen and (orientation: landscape) {
+
+/*android devices -------------*/
+
+/*galaxy 8*/
+@media only screen and (min-width: 740px) and (min-height: 360px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 4),
+only screen and (-min--moz-device-pixel-ratio: 4),
+only screen and (-o-min-device-pixel-ratio: 4/1),
+only screen and (min-device-pixel-ratio: 4) {
     canvas {
-        height: 100vh;
+        height: 100%;
         width: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    body {
-        width: auto;
-        height: 50%;
     }
 }
 
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
-
-    /*ipad*/
+@media only screen and (min-width: 360px) and (min-height: 740px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 4),
+only screen and (-min--moz-device-pixel-ratio: 4),
+only screen and (-o-min-device-pixel-ratio: 4/1),
+only screen and (min-device-pixel-ratio: 4) {
     canvas {
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
 }
 
 
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-
-    /*ipad-mini portrait*/
+/* samsung-galaxy-a71*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) and (min-width: 914px) and (min-height: 412px) and (orientation: landscape) {
     canvas {
-        height: 100vh;
+        height: 100%;
         width: auto;
     }
 }
 
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
-
-    /*ipad-mini landscape*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2.625) and (min-width: 412px) and (min-height: 914px) and (orientation: portrait) {
     canvas {
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
 }
 
-/**-----**/
 
 
+/*pixel 7*/
+@media only screen and (min-width: 915px) and (min-height: 412px) and (-webkit-min-device-pixel-ratio: 2.625) and (orientation: landscape),
+only screen and (-min--moz-device-pixel-ratio: 2.625),
+only screen and (-o-min-device-pixel-ratio: 2.625/1),
+only screen and (min-device-pixel-ratio: 2.625) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 412px) and (min-height: 915px) and (-webkit-min-device-pixel-ratio: 2.625) and (orientation: portrait),
+only screen and (-min--moz-device-pixel-ratio: 2.625),
+only screen and (-o-min-device-pixel-ratio: 2.625/1),
+only screen and (min-device-pixel-ratio: 2.625) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/*pixel 3xl*/
+@media only screen and (min-width: 786px) and (min-height: 393px) and (orientation: landscape) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 393px) and (min-height: 786px) and (orientation: portrait) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/*zfold*/
+@media only screen and (min-width: 882px) and (min-height: 344px) and (orientation: landscape) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 344px) and (min-height: 882px) and (orientation: portrait) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*ios*/
+
+/*ios devices ------------------*/
+/*----------------------------------------------------------------------------*/
+/*ipad*/
+
+/*ipad landscape*/
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/*ipad-air landscape*/
+@media all and (device-width: 1180px) and (device-height: 820px) and (orientation: landscape) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
 
 @media all and (device-width: 820px) and (device-height: 1180px) and (orientation: portrait) {
-
-    /*ipad-air portrait*/
     canvas {
-        height: 100vh;
+        height: 100%;
         width: auto;
     }
 }
 
-@media all and (device-width: 1180px) and (device-height: 820px) and (orientation: landscape) {
+/*----------------------------------------------------------------------------*/
 
-    /*ipad-air landscape*/
+/*ipad-pro portrait*/
+
+@media only screen and (orientation: landscape) and (min-height: 1024px) and (min-width : 1366px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
     canvas {
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
-    /*ipad-pro portrait*/
+@media only screen and (orientation: portrait) and (min-height: 1366px) and (min-width : 1024px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (-min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
     canvas {
-        height: 100vh;
+        height: 100%;
         width: auto;
     }
 }
 
-/* Landscape */
-@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
-    /*ipad-pro landscape*/
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/*iphone x*/
+@media only screen and (orientation: portrait) and (min-height: 812px) and (min-width: 375px) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
     canvas {
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
+}
 
+@media only screen and (orientation: landscape) and (min-height: 375px) and (min-width: 812px) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+
+/*iphone xr and iphone 11*/
+@media only screen and (device-width : 896px) and (device-height : 414px) and (-webkit-device-pixel-ratio : 2) and (orientation: landscape) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) and (orientation: portrait) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/*iphone 12 13 14*/
+@media only screen and (min-width: 844px) and (min-height: 390px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 390px) and (min-height: 844px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/*iphone 15 */
+@media only screen and (min-width: 852px) and (min-height: 393px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 393px) and (min-height: 852px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/*iphone 16 pro max*/
+@media only screen and (min-width: 956px) and (min-height: 440px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+    canvas {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 440px) and (min-height: 956px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3),
+only screen and (-min--moz-device-pixel-ratio: 3),
+only screen and (-o-min-device-pixel-ratio: 3/1),
+only screen and (min-device-pixel-ratio: 3) {
+    canvas {
+        height: auto;
+        width: 100%;
+    }
 }
